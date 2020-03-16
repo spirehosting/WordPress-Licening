@@ -16,9 +16,9 @@ define('YOUR_LICENSE_SERVER_URL', 'https://nmnd.design');
 define('YOUR_ITEM_REFERENCE', 'NMND License');
 
 //define some URL's for redirecting
-$expired_page = 'https://nmnd.design/website-expired?license='.get_option('nmnd_license_key').'&amp;'.get_option('siteurl').'';
-$error_page = 'https://nmnd.design/website-error?license='.get_option('nmnd_license_key').'&amp;'.get_option('siteurl').'';
-$disabled_page = 'https://nmnd.design/website-disabled?license='.get_option('nmnd_license_key').'&amp;'.get_option('siteurl').'';
+$expired_page = 'https://nmnd.design/website-expired?license='.get_option('nmnd_license_key').'&amp;url='.get_option('siteurl').'';
+$error_page = 'https://nmnd.design/website-error?license='.get_option('nmnd_license_key').'&amp;url='.get_option('siteurl').'';
+$disabled_page = 'https://nmnd.design/website-disabled?license='.get_option('nmnd_license_key').'&amp;url='.get_option('siteurl').'';
 
 //add the menu item into the settings menu
 add_action('admin_menu', 'nmnd_license_menu');
